@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Test Page</title>
+    </head>
+    <body>
+        <script>
+            function AddTwoNumbers(num1, num2)
+            {
+                return parseInt(num1) + parseInt(num2);
+            }
+        </script>
+        <h1>Adds two numbers using JavaScript</h1>
+        <h3>Enter two numbers, then click to add</h3>
+        <input type="number" id="num1" value="10" /><br />
+        <input type="number" id="num2" value="10" /><br />
+        Result: <span id="output"></span><br />
+        <input type="button" value="Click to add >>" 
+            onclick="javascript:document.getElementById('output').innerHTML=AddTwoNumbers(document.getElementById('num1').value, 
+            document.getElementById('num2').value);" />
+    </body>
+</html>
